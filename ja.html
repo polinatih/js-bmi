@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function first( weight, height) {
+ return  (weight/height**2).toFixed(2);
+}
+
+const weightVadim = 78;
+const weightAlex = 92;
+const heightVadim  = 1.69;
+const heightAlex = 1.95;
+let markHigherBMI = first(weightAlex, heightAlex) < first(weightVadim, heightVadim);
+
+const weightV2 = 95;
+const heightV2 = 1.88;
+const weightA2 = 85;
+const heightA2= 1.76;
+let markHigherBMI2 = first(weightA2, heightA2) < first(weightV2, heightV2);
+console.log ("BMI Vadim:" ,first(weightVadim, heightVadim));
+console.log ( "BMI Alex:" ,first(weightAlex, heightAlex));
+console.log("BMI Vadim is higher :", markHigherBMI);
+    console.log("Var 2:")
+    console.log ("BMI Vadim:" ,first(weightV2, heightV2));
+    console.log ( "BMI Alex:" ,first(weightA2, heightA2));
+    console.log("BMI Vadim is higher :", markHigherBMI2);
+    </script>
+</body>
+</html>
